@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: ccf-supplier-api
+    runtime: docker
+    plan: free
+    rootDir: backend
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: FRONTEND_URL
+        value: https://sathustra.github.io
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
