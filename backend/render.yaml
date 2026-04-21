@@ -9,7 +9,7 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: FRONTEND_URL
-        value: https://username.github.io/supplier-portal
+        value: https://sathustra.github.io
       - key: ADMIN_EMAIL
         sync: false
       - key: ADMIN_PASSWORD
